@@ -1,0 +1,4 @@
+name: rwies
+markdown: kramdown
+twitter_username: odega
+permalink: /blog/:year/:month/:day/:title
