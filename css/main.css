@@ -30,9 +30,47 @@ nav.right {
     background-image: url('/assets/user_image.jpg');
 }
 
+.hero {
+    display: inline-block;
+    background: url('/assets/user_image.jpg') right bottom no-repeat;
+    background-size: contain;
+    padding: 110px 0 100px 0;
+    height: auto;
+    background-color: #FBFBFB;
+}
+
+.hero h1 {
+    font-size: 120px;
+    letter-spacing: -8px;
+    margin: 0;
+    font-weight: 600;
+    line-height: 95px;
+    text-transform: uppercase;
+}
+.hero h1 span {
+    color:#a1a9b0;
+    /* display:inline-block; */
+}
+.hero h3 {
+    font-size: 20px;
+    margin:0;
+    padding:0;
+    /*opacity:0.5;*/
+    color: #913B5E;
+    letter-spacing: 18px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+.hero p {
+    letter-spacing:1px;
+    color:#fff;
+    font-size: 15px;
+}
+
 a {
     text-decoration: none;
-    color: #999;
+    color: #913B5E;
+    opacity: 50%;
 }
 
 a:hover {
