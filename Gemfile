@@ -6,3 +6,4 @@ gem "kramdown-parser-gfm", "~> 1.1"
 gem "jekyll-watch", "~> 2.2"
 
 gem "jekyll-feed"
+gem 'jekyll-seo-tag'
