@@ -32,10 +32,11 @@ nav.right {
 
 .hero {
     display: inline-block;
-    background: url('/assets/user_image.jpg') right bottom no-repeat;
+    background: url('/assets/user_image.jpg') right no-repeat;
     background-size: contain;
     padding: 110px 0 100px 0;
     height: auto;
+    width: 100%;
     background-color: #FBFBFB;
 }
 
