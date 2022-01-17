@@ -27,4 +27,27 @@ We should shape the future together."
 		Drop me a line if you want to shape the future with me:
 		<a href="https://linkedin.com/in/rmwiesenberg" rel="noopener noreferrer" target="_blank">LinkedIn</a>
 	</p>
+	<div class="container-fluid contenedor text-center">
+		<h1>Recent Posts</h1>
+		<div class=" container text-center">
+			{% for post in site.posts limit: 3 %}
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto ">
+				<a href="{{ post.url }}">
+					<div class="ver_mas text-center">
+						<span><i aria-hidden="true" class="fa fa-eye"></i></span>
+					</div>
+					<article class="text-left">
+						<h2>{{ post.title }}</h2>
+						<h4>{{ post.excerpt | slice: 0, 36 }}...</h4>
+					</article>
+					<img alt="{{ post.title }}" src="{{ post.image }}">
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+
 </div><!-- /.blurb -->
+<script crossorigin="anonymous" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
