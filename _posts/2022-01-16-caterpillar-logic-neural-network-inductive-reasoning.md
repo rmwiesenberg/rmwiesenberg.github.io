@@ -4,7 +4,7 @@ title: "Teaching a machine to play a rare, difficult game"
 date: 2022-01-16
 tags: neural network inductive reasoning mobile game python pytorch learning teaching training caterpillar logic
 excerpt: "Inductive reasoning, the process of inferring patterns from an analysis of a set of data, isn't normally taught in schools and is difficult for most people without practice. However, machine learning techniques are known to succeed in datasets with strong patterns."
-image: /assets/images/caterpillar-logic/caterpillar-logic-banner.png
+image: /img/caterpillar-logic/caterpillar-logic-banner.png
 github: https://github.com/rmwiesenberg/pytorch-oneoffs/tree/main/caterpillar-logic
 ---
 
@@ -29,7 +29,7 @@ I was introduced to this game by my friend [Max Merlin](https://www.linkedin.com
 So, as all machine learning evaluations start, I set off to collect my dataset.
 
 ## Data Collection
-<img src="/assets/images/caterpillar-logic/caterpillar-logic-game-screen.png" title="Caterpillar Logic game screen" alt="Caterpillar Logic game screen" width=480>
+<img src="/img/caterpillar-logic/caterpillar-logic-game-screen.png" title="Caterpillar Logic game screen" alt="Caterpillar Logic game screen" width=480>
 
 The search space for Caterpillar logic is fairly limited with only four colors and a maximum of seven segments. 
 <div class="quote">4 + 4<sup>2</sup> + 4<sup>3</sup> + 4<sup>4</sup> + 4<sup>5</sup> + 4<sup>6</sup> + 4<sup>7</sup> = 21871 caterpillars</div>  
@@ -54,7 +54,7 @@ I designed a tool to poll the colors and press the buttons itself. However, I st
 To be fair to the developer, this use-case was extremely unlikely and definitely outside the scope of a typical mobile user.
 
 ### Working Method: Level Refresh
-<img src="/assets/images/caterpillar-logic/caterpillar-refresh.png" title="Caterpillar Logic level refresh method" alt="Caterpillar Logic level refresh method">
+<img src="/img/caterpillar-logic/caterpillar-refresh.png" title="Caterpillar Logic level refresh method" alt="Caterpillar Logic level refresh method">
 
 The method that I ended up using was simply repeatedly opening and closing the page to have the game refresh the caterpillars for me:
 1. __Generate__ the system-limited search space: 5487 caterpillars
@@ -74,11 +74,11 @@ After some experimenting, I decided on a network with 5 linear layers and a fina
 7. ReLU(Linear 16->1)
 
 Here is an example training run:
-<img src="/assets/images/caterpillar-logic/13.png" title="Caterpillar Logic training graph" alt="Caterpillar Logic training graph">
+<img src="/img/caterpillar-logic/caterpillar-logic-training.png" title="Caterpillar Logic training graph" alt="Caterpillar Logic training graph">
 
 As you can see, the network is improving over time but the results are inconsistent on the validation data, with varying levels of success, but always better than 70% regardless of level chosen. This at least proves the network is learning, but the space may be too small for full success for this network type.
 
-<img src="/assets/images/caterpillar-logic/success.png" width=480 title="Caterpillar Logic success" alt="Caterpillar Logic success">
+<img src="/img/caterpillar-logic/success.png" width=480 title="Caterpillar Logic success" alt="Caterpillar Logic success">
 
 After a few attempts (5... oof) on a random level the network successfully guessed 15/15 test caterpillars!  
 

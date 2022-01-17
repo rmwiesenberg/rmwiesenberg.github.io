@@ -5,10 +5,13 @@ url: rwies.com
 author: Ryan Wiesenberg
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
-social:
-  links:
-    - https://www.linkedin.com/in/rmwiesenberg
-    - https://github.com/rmwiesenberg
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image: /assets/user_image.jpg
 
 plugins:
   - jekyll-feed
