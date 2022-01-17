@@ -16,13 +16,18 @@
 </head>
 <body>
 <header>
-<nav class="right">
-	<ul>
-		<li><a href="/">Home</a></li>
-		<li><a href="http://ode.games" rel="noopener noreferrer" target="_blank">Game Dev</a></li>
-		<li><a href="/blog">Blog</a></li>
-	</ul>
-</nav>
+	{% if page.url != "/" %}
+	<a href="/">
+		<div class="user"></div>
+	</a>
+	{% endif %}
+	<nav class="right">
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="http://ode.games" rel="noopener noreferrer" target="_blank">Game Dev</a></li>
+			<li><a href="/blog">Blog</a></li>
+		</ul>
+	</nav>
 </header>
 <br>
 <div class="container">
