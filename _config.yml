@@ -1,6 +1,14 @@
-name: rwies
+name: Ryan Wiesenberg
+title: Ryan Wiesenberg - Personal Projects and Blog
+tagline: Machine learning, making, game development, and more.
+url: rwies.com
+author: Ryan Wiesenberg
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+social:
+  links:
+    - https://www.linkedin.com/in/rmwiesenberg
+    - https://github.com/rmwiesenberg
 
 plugins:
   - jekyll-feed
