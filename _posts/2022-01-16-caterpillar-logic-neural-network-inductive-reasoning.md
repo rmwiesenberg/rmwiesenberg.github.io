@@ -7,6 +7,6 @@ datasets with strong patterns."
 image: /img/caterpillar-logic-banner.png
 ---
 
-Inductive reasoning is a rare mechanic in games, requiring the player to analyze large amounts of data to determine a
-pattern.
+Inductive reasoning is a rare mechanic in games, requiring the player to analyze a few patterns of game pieces or
+diagrams and then data to determine a pattern.
 
